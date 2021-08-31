@@ -55,10 +55,10 @@ window.onload = function () {
   const submit = document.getElementById("submit") as HTMLElement;
 
   submit.addEventListener("click", function () {
-    const pedro = new Aluno((inputname.value), (inputmatricula.value), Number(input1.value), Number(input2.value));
-    console.log(pedro.dizerAlgo())
-    alert(pedro.dizerAlgo() + "\nMultiplicação: " + pedro.multiplicar() + 
-    "\nSoma: " + pedro.somar() + "\nDivisão: " + pedro.dividir() + "\nResto da Divisão: " + pedro.calcularRestoDeDivisao()) 
+    const aluno = new Aluno((inputname.value), (inputmatricula.value), Number(input1.value), Number(input2.value));
+    console.log(aluno.dizerAlgo())
+    alert(aluno.dizerAlgo() + "\nMultiplicação: " + aluno.multiplicar() + 
+    "\nSoma: " + aluno.somar() + "\nDivisão: " + aluno.dividir() + "\nResto da Divisão: " + aluno.calcularRestoDeDivisao()) 
   });
   };
 

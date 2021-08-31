@@ -56,9 +56,9 @@ window.onload = function () {
     var input2 = document.getElementById("number2");
     var submit = document.getElementById("submit");
     submit.addEventListener("click", function () {
-        var pedro = new Aluno((inputname.value), (inputmatricula.value), Number(input1.value), Number(input2.value));
-        console.log(pedro.dizerAlgo());
-        alert(pedro.dizerAlgo() + "\nMultiplicação: " + pedro.multiplicar() +
-            "\nSoma: " + pedro.somar() + "\nDivisão: " + pedro.dividir() + "\nResto da Divisão: " + pedro.calcularRestoDeDivisao());
+        var aluno = new Aluno((inputname.value), (inputmatricula.value), Number(input1.value), Number(input2.value));
+        console.log(aluno.dizerAlgo());
+        alert(aluno.dizerAlgo() + "\nMultiplicação: " + aluno.multiplicar() +
+            "\nSoma: " + aluno.somar() + "\nDivisão: " + aluno.dividir() + "\nResto da Divisão: " + aluno.calcularRestoDeDivisao());
     });
 };
